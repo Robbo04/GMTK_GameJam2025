@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.PackageManager.UI;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerScript : MonoBehaviour
@@ -29,6 +30,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButtonDown("Cancel"))
         {
             FindAnyObjectByType<SpawnPlayer>().Spawn();
+            gameObject.layer = 6;
             gameObject.GetComponent<PlayerScript>().enabled = false;
         }
 
@@ -50,6 +52,7 @@ public class PlayerScript : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        print(IsGrounded());
     }
 
     private bool IsGrounded()
