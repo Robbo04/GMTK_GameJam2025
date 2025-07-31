@@ -23,7 +23,7 @@ public class SpawnPlayer : MonoBehaviour
         {
             players[livesLeft-1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
             livesLeft--;
-            print(livesLeft);
+            //print(livesLeft);
         }
     }
 }
