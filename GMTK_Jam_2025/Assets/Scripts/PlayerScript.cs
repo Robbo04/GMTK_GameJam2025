@@ -16,8 +16,22 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+
+
+    private void Start()
+    {
+        //replace with different sprites
+        this.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+    }
+
     void Update()
     {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            FindAnyObjectByType<SpawnPlayer>().Spawn();
+            gameObject.GetComponent<PlayerScript>().enabled = false;
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
