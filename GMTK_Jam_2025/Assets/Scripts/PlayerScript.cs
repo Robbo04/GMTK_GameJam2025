@@ -29,9 +29,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            FindAnyObjectByType<SpawnPlayer>().Spawn();
-            gameObject.layer = 6;
-            gameObject.GetComponent<PlayerScript>().enabled = false;
+            DisablePlayer();
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -69,5 +67,13 @@ public class PlayerScript : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private void DisablePlayer()
+    {
+        FindAnyObjectByType<SpawnPlayer>().Spawn();
+        gameObject.layer = 6;
+        rb.velocity = Vector3.zero;
+        gameObject.GetComponent<PlayerScript>().enabled = false;
     }
 }
