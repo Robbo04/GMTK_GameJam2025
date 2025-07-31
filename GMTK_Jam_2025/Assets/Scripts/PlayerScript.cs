@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-
+    [SerializeField] private PhysicsMaterial2D noFrictionMat;
 
     private void Start()
     {
@@ -74,6 +74,7 @@ public class PlayerScript : MonoBehaviour
         FindAnyObjectByType<SpawnPlayer>().Spawn();
         gameObject.layer = 6;
         rb.velocity = Vector3.zero;
+        gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
     }
 }
