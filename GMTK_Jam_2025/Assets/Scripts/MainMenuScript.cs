@@ -19,7 +19,7 @@ public class MainMenuScript : MonoBehaviour
     public void OpenScene()
     {
         print (buttonType);
-        if (buttonType == "Level Selection")
+        if (buttonType == "Play")
         {
             SceneManager.LoadScene(buttonType.ToString());
         }
