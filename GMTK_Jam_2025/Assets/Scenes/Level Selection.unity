@@ -762,6 +762,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6471907242335182697, guid: 6100964410fa5c746a526668b37be2e7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8376212369760672024, guid: 6100964410fa5c746a526668b37be2e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -854,7 +858,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3426653297917672277, guid: 6100964410fa5c746a526668b37be2e7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
