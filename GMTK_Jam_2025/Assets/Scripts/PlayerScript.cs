@@ -77,4 +77,12 @@ public class PlayerScript : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("DeathZone"))
+        {
+            DisablePlayer();
+        }
+    }
 }
