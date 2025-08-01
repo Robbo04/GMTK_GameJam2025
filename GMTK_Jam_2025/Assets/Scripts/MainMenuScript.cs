@@ -31,7 +31,6 @@ public class MainMenuScript : MonoBehaviour
         {
             print("Quit NOW");
             Application.Quit();
-            
         }
     }
 }

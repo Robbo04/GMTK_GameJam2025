@@ -497,9 +497,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
       propertyPath: m_text
-      value: 'Exit
-
-'
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 3985700084389447692, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -654,8 +652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4060d8a803cbbfa4694270b4262abeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonType: 0
   buttonText: {fileID: 3747485318935241668}
+  buttonType: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
