@@ -7,17 +7,29 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     //variables
-    public int buttonType;
     public TMP_Text buttonText;
-    // Start is called before the first frame update
-    void Start()
+    public string buttonType;
+    public void Start()
     {
-        buttonText.text = buttonType.ToString();
+        //buttonType = buttonText;
     }
 
     // Update is called once per frame
     public void OpenScene()
     {
-        SceneManager.LoadScene(buttonType.ToString());
+        print (buttonType);
+        if (buttonType == "Level Selection")
+        {
+            SceneManager.LoadScene(buttonType.ToString());
+        }
+        else if (buttonType == "Settings")
+        {
+            SceneManager.LoadScene(buttonType.ToString());
+        }
+        else if (buttonType == "Exit")
+        {
+            Application.Quit();
+            print("Quit NOW");
+        }
     }
 }
