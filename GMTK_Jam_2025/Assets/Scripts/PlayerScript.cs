@@ -22,7 +22,7 @@ public class PlayerScript : MonoBehaviour
     private void Start()
     {
         //replace with different sprites
-        this.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+        //this.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
     }
 
     void Update()
