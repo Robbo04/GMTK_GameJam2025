@@ -11,6 +11,6 @@ public class RotateForScales : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.rotation = ;
+        
     }
 }
