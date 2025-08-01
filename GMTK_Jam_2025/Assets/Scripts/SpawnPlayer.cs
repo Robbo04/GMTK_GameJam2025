@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SpawnPlayer : MonoBehaviour
 {
+    //SerializeFields
     [SerializeField] private GameObject gameObjectToSpawn;
+    [SerializeField] public GameObject spawnprotection; 
+    //Variables
     public int livesLeft = 2;
-
+    //Array of Cubes
     GameObject[] players;
 
     // Start is called before the first frame update
@@ -21,9 +25,12 @@ public class SpawnPlayer : MonoBehaviour
     {
         if (livesLeft > 0)
         {
-            players[livesLeft-1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
-            livesLeft--;
-            //print(livesLeft);
+            if (spawnprotection.GetComponent<SpawnProtection>().IsInside == false)
+            {
+                players[livesLeft - 1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
+                livesLeft--;
+            }
+            
         }
     }
 }
