@@ -9,9 +9,10 @@ public class MainMenuScript : MonoBehaviour
     //variables
     public TMP_Text buttonText;
     public string buttonType;
+    
     public void Start()
     {
-        //buttonType = buttonText;
+        buttonType = buttonText.text;
     }
 
     // Update is called once per frame
@@ -28,8 +29,9 @@ public class MainMenuScript : MonoBehaviour
         }
         else if (buttonType == "Exit")
         {
-            Application.Quit();
             print("Quit NOW");
+            Application.Quit();
+            
         }
     }
 }
