@@ -713,7 +713,7 @@ PrefabInstance:
     - target: {fileID: 6471907242335182697, guid: 6100964410fa5c746a526668b37be2e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7797615342244620978}
+      objectReference: {fileID: 1983820863}
     - target: {fileID: 6471907242335182697, guid: 6100964410fa5c746a526668b37be2e7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenScene
