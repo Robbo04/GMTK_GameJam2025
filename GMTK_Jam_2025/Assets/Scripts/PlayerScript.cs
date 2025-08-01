@@ -12,6 +12,7 @@ public class PlayerScript : MonoBehaviour
     private float speed = 4f;
     private float jumpingPower = 8f;
     private bool isFacingRight = true;
+    public bool isInSafety = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -29,7 +30,10 @@ public class PlayerScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
-            DisablePlayer();
+            if (!isInSafety)
+            {
+                DisablePlayer();
+            }
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");

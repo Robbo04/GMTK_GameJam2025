@@ -249,7 +249,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -386.8, y: 195.4}
+  m_AnchoredPosition: {x: -716, y: 364}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253771940
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectToSpawn: {fileID: 1846997345827513882, guid: 16660952d7575b64baef66507aaee43b, type: 3}
-  spawnprotection: {fileID: 1368893087415085026}
+  spawnProtection: {fileID: 1368893087415085026}
   livesLeft: 3
 --- !u!212 &1454177240
 SpriteRenderer:
@@ -1801,6 +1801,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1111725807013218447, guid: d3b9680dee9928248ae45e9fee13dcc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1368893087415085027}
+    - targetCorrespondingSourceObject: {fileID: 1111725807013218447, guid: d3b9680dee9928248ae45e9fee13dcc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1368893087415085030}
   m_SourcePrefab: {fileID: 100100000, guid: d3b9680dee9928248ae45e9fee13dcc8, type: 3}
 --- !u!1 &1368893087415085026 stripped
 GameObject:
@@ -1853,6 +1856,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1368893087415085030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368893087415085026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 940bbdb4452ff274a85ff501422c906b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsInside: 0
 --- !u!1001 &1670653653499044521
 PrefabInstance:
   m_ObjectHideFlags: 0

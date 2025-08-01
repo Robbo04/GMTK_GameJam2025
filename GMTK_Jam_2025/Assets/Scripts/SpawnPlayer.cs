@@ -7,7 +7,7 @@ public class SpawnPlayer : MonoBehaviour
 {
     //SerializeFields
     [SerializeField] private GameObject gameObjectToSpawn;
-    [SerializeField] public GameObject spawnprotection; 
+    [SerializeField] public GameObject spawnProtection; 
     //Variables
     public int livesLeft = 2;
     //Array of Cubes
@@ -25,12 +25,12 @@ public class SpawnPlayer : MonoBehaviour
     {
         if (livesLeft > 0)
         {
-            if (spawnprotection.GetComponent<SpawnProtection>().IsInside == false)
+            if (!spawnProtection.GetComponent<SpawnProtection>().IsInside)
             {
                 players[livesLeft - 1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
                 livesLeft--;
+                print(spawnProtection.GetComponent<SpawnProtection>().IsInside);
             }
-            
         }
     }
 }

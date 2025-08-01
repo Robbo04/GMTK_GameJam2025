@@ -5,15 +5,26 @@ using UnityEngine;
 public class SpawnProtection : MonoBehaviour
 {
     public bool IsInside = false;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.gameObject.CompareTag("Player"))
+        if (other.tag == "Player" && other.GetComponent<PlayerScript>().isActiveAndEnabled)
         {
             IsInside = true;
+            other.gameObject.GetComponent<PlayerScript>().isInSafety = true;
         }
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player" && other.GetComponent<PlayerScript>().isActiveAndEnabled)
         {
             IsInside = false;
+            other.gameObject.GetComponent<PlayerScript>().isInSafety = false;
         }
+    }
+
+    private void Update()
+    {
+        print(IsInside);
     }
 }
