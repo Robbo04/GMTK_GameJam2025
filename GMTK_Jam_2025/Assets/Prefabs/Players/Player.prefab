@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3217286050153917833}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Common
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0daed5e563f2644b7ee12531921f4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInSafety: 0
   rb: {fileID: 2211428551756665850}
   groundCheck: {fileID: 1838069608561726990}
   groundLayer:
