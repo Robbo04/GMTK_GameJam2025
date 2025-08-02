@@ -5,18 +5,25 @@ using UnityEngine;
 public class ButtonBehaviour : MonoBehaviour
 {
 
-    public GameObject wall;
+    public GameObject wall = null;
     public bool active = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        wall.SetActive(false);
-        bool active = true;
+        if (wall != null)
+        {
+            wall.SetActive(false);
+        }
+        
+        active = true;
 }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        wall.SetActive(true);
-        bool active = false;
+        if (wall != null)
+        {
+            wall.SetActive(true);
+        }
+        active = false;
 }
 }

@@ -25,6 +25,6 @@ public class SpawnProtection : MonoBehaviour
 
     private void Update()
     {
-        print(IsInside);
+        //print(IsInside);
     }
 }
