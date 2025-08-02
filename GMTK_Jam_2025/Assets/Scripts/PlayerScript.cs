@@ -28,7 +28,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Fire2"))
         {
             if (!isInSafety)
             {
