@@ -17,7 +17,7 @@ public class SpawnPlayer : MonoBehaviour
     void Start()
     {
         players = new GameObject[livesLeft];
-        Spawn();
+        CreatePlayer();
     }
 
     // Update is called once per frame
@@ -27,10 +27,17 @@ public class SpawnPlayer : MonoBehaviour
         {
             if (!spawnProtection.GetComponent<SpawnProtection>().IsInside)
             {
-                players[livesLeft - 1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
-                livesLeft--;
-                print(spawnProtection.GetComponent<SpawnProtection>().IsInside);
+                CreatePlayer();
+                
+                //print(spawnProtection.GetComponent<SpawnProtection>().IsInside);
             }
         }
     }
+
+    public void CreatePlayer()
+    {
+        players[livesLeft - 1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
+        livesLeft--;
+    }
+
 }
