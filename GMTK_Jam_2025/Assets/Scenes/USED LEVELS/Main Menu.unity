@@ -776,17 +776,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b6d5ec4adbe18409d60dbc8d20f246, type: 3}
---- !u!114 &681073831 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
-  m_PrefabInstance: {fileID: 1169739198}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &721889004
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,8 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4060d8a803cbbfa4694270b4262abeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 681073831}
-  buttonType: 0
+  buttonType: Credits
 --- !u!1 &741599622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,8 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4060d8a803cbbfa4694270b4262abeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 1795021345}
-  buttonType: Play
+  buttonType: Level Selection
 --- !u!1 &972957240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,7 +1350,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
       propertyPath: m_text
-      value: Settings
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
       propertyPath: m_fontSize
@@ -2747,17 +2734,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762006328}
   m_CullTransparentMesh: 1
---- !u!114 &1795021345 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
-  m_PrefabInstance: {fileID: 1508450992}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1796805202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,17 +3346,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7322256997988962941, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
   m_PrefabInstance: {fileID: 3747485318935241665}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3747485318935241668 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3002115595899160016, guid: 8896c9e1782b18548aa245c04eb399e9, type: 3}
-  m_PrefabInstance: {fileID: 3747485318935241665}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3747485318935241669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3393,8 +3358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4060d8a803cbbfa4694270b4262abeff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: {fileID: 3747485318935241668}
-  buttonType: 0
+  buttonType: Exit
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
