@@ -7,7 +7,7 @@ public class HydrPress : MonoBehaviour
 {
 
     bool descend = true;
-    public float speed = 0.01f;
+    public float speed = 100f;
 
     void Start()
     {
@@ -19,7 +19,7 @@ public class HydrPress : MonoBehaviour
     {
         if (descend)
         {
-            transform.localPosition = new Vector3(0, transform.localPosition.y - speed, 0);
+            transform.localPosition = new Vector3(0, transform.localPosition.y - (Time.deltaTime * speed), 0);
 
             if (transform.localPosition.y <= -1)
             {
@@ -29,7 +29,7 @@ public class HydrPress : MonoBehaviour
 
         if (!descend)
         {
-            transform.localPosition = new Vector3(0, transform.localPosition.y + speed, 0);
+            transform.localPosition = new Vector3(0, transform.localPosition.y + (Time.deltaTime * speed), 0);
 
             if (transform.localPosition.y >= 0)
             {
