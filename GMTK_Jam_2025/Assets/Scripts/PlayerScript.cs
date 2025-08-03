@@ -97,13 +97,15 @@ public class PlayerScript : MonoBehaviour
 
     private void DisablePlayer()
     {
-        FindAnyObjectByType<SpawnPlayer>().Spawn();
-        gameObject.layer = 6;
-        rb.velocity = Vector3.zero;
-        gameObject.GetComponent<BoxCollider2D>().sharedMaterial = NoFrictionMat;
-        gameObject.GetComponent<PlayerScript>().enabled = false;
-        ToggleVisualActivation(false);
-
+        if (terry_image_activated.GetComponent<Renderer>().enabled)
+        {
+            FindAnyObjectByType<SpawnPlayer>().Spawn();
+            gameObject.layer = 6;
+            rb.velocity = Vector3.zero;
+            gameObject.GetComponent<BoxCollider2D>().sharedMaterial = NoFrictionMat;
+            gameObject.GetComponent<PlayerScript>().enabled = false;
+            ToggleVisualActivation(false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
