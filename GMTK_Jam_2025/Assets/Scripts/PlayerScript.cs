@@ -23,10 +23,21 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip flickSwitch;
 
+    //used to make Terry visually change when deactivated
+    public GameObject terry_image_activated;
+    public GameObject terry_image_deactivated;
+
     private void Start()
     {
         //replace with different sprites
         //this.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+        ToggleVisualActivation(true);
+    }
+
+    private void ToggleVisualActivation(bool isActivated)
+    {
+        terry_image_activated.GetComponent<Renderer>().enabled = isActivated;
+        terry_image_deactivated.GetComponent<Renderer>().enabled = !isActivated;
     }
 
     void Update()
@@ -85,7 +96,8 @@ public class PlayerScript : MonoBehaviour
         rb.velocity = Vector3.zero;
         gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
-        
+        ToggleVisualActivation(false);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

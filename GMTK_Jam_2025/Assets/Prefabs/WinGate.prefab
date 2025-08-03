@@ -224,8 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc59bb342ab373d47b0e2fdc11afa4d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flag_raised_image: {fileID: 1125688639973823165}
+  CoinCollect: {fileID: 0}
   flag_lowered_image: {fileID: 7506470888061322173}
+  flag_raised_image: {fileID: 1125688639973823165}
 --- !u!1 &7506470888061322173
 GameObject:
   m_ObjectHideFlags: 0
