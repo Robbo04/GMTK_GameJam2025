@@ -8,12 +8,6 @@ public class WinnersGateScript : MonoBehaviour
     [SerializeField] public GameObject retryButton;
     [SerializeField] public GameObject winScreen;
 
-
-    void Start()
-    {
-        winScreen.SetActive(false);
-    }
-
     public GameObject flag_lowered_image;
     public GameObject flag_raised_image;
 
@@ -25,6 +19,7 @@ public class WinnersGateScript : MonoBehaviour
 
     private void Start()
     {
+        winScreen.SetActive(false);
         ToggleFlagRaised(false);
     }
 
