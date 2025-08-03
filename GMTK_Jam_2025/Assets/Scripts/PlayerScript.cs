@@ -14,16 +14,35 @@ public class PlayerScript : MonoBehaviour
     private bool isFacingRight = true;
     public bool isInSafety = false;
 
+    //used to make Terry visually change when deactivated
+    public GameObject terry_image_activated;
+    public GameObject terry_image_deactivated;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private PhysicsMaterial2D noFrictionMat;
 
+    private void ToggleVisualActivation(bool isActivated)
+    {
+        if (isActivated)
+        {
+            terry_image_activated.GetComponent<Renderer>().enabled = true;
+            terry_image_deactivated.GetComponent<Renderer>().enabled = false;
+        }
+        else
+        {
+            terry_image_activated.GetComponent<Renderer>().enabled = false;
+            terry_image_deactivated.GetComponent<Renderer>().enabled = true;
+        }
+    }
+
     private void Start()
     {
         //replace with different sprites
         //this.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+        ToggleVisualActivation(true);
     }
 
     void Update()
@@ -80,6 +99,7 @@ public class PlayerScript : MonoBehaviour
         rb.velocity = Vector3.zero;
         gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
+        ToggleVisualActivation(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
