@@ -15,11 +15,11 @@ public class HydrPress : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (descend)
         {
-            transform.localPosition = new Vector3(0, transform.localPosition.y - (Time.deltaTime * speed), 0);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - speed, transform.localPosition.z);
 
             if (transform.localPosition.y <= -1)
             {
@@ -29,7 +29,7 @@ public class HydrPress : MonoBehaviour
 
         if (!descend)
         {
-            transform.localPosition = new Vector3(0, transform.localPosition.y + (Time.deltaTime * speed), 0);
+            transform.localPosition = new(transform.localPosition.x, transform.localPosition.y + speed, transform.localPosition.z);
 
             if (transform.localPosition.y >= 0)
             {
