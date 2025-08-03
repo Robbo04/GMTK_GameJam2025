@@ -8,15 +8,25 @@ public class SoundFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource soundFXObject;
 
+    [SerializeField] private AudioSource soundMusicObject;
+
+    [SerializeField] private AudioClip Music;
+
     private void Awake()
     {
+        DontDestroyOnLoad(soundMusicObject);
+
+        soundMusicObject.clip = Music;
+        soundMusicObject.Play();
+
+
         if (instance == null)
         {
             instance = this;
         }
-
-
     }
+
+
     public void PlaySoundFXCLip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
         //spawn game obj

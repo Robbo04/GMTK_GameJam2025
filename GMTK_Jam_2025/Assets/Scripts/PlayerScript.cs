@@ -22,7 +22,6 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip flickSwitch;
-    [SerializeField] private AudioClip completeLevel;
 
     private void Start()
     {

@@ -9,7 +9,7 @@ public class WinnersGateScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Level Complete");
-        SoundFXManager.instance.PlaySoundFXCLip(CoinCollect, transform, 1f);
+        //SoundFXManager.instance.PlaySoundFXCLip(CoinCollect, transform, 1f);
         Destroy(this.gameObject);
     }
 }
