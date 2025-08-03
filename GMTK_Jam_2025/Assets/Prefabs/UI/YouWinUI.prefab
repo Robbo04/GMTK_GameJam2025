@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 4816623231576423013}
   - component: {fileID: 8469363048160112395}
   - component: {fileID: 6167445242039984256}
+  - component: {fileID: 8434429479944721879}
   m_Layer: 5
   m_Name: Btn_Replay
   m_TagString: Untagged
@@ -195,7 +196,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8469363048160112395}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8434429479944721879}
+        m_TargetAssemblyTypeName: WinMenuButton, Assembly-CSharp
+        m_MethodName: OpenWinScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8434429479944721879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799945943231992690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56df405172e361041b36c0e778b39ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: Replay
+  currentScene:
+    m_Handle: 0
+  level: 0
 --- !u!1 &2030326540057370020
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,6 +237,7 @@ GameObject:
   - component: {fileID: 6809572744803862492}
   - component: {fileID: 7368587172783377479}
   - component: {fileID: 2247059288825693466}
+  - component: {fileID: 6257434297679173679}
   m_Layer: 5
   m_Name: Btn_Continue
   m_TagString: Untagged
@@ -316,7 +346,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7368587172783377479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6257434297679173679}
+        m_TargetAssemblyTypeName: WinMenuButton, Assembly-CSharp
+        m_MethodName: OpenWinScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6257434297679173679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030326540057370020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56df405172e361041b36c0e778b39ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: Next
+  currentScene:
+    m_Handle: 0
+  level: 1
 --- !u!1 &3979863159091417378
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +894,7 @@ GameObject:
   - component: {fileID: 4116287430122649189}
   - component: {fileID: 4377596404584355313}
   - component: {fileID: 5724869418096274290}
+  - component: {fileID: 8200062399498224831}
   m_Layer: 5
   m_Name: Btn_Menu
   m_TagString: Untagged
@@ -944,7 +1003,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4377596404584355313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8200062399498224831}
+        m_TargetAssemblyTypeName: WinMenuButton, Assembly-CSharp
+        m_MethodName: OpenWinScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8200062399498224831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718027300379279035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56df405172e361041b36c0e778b39ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonType: Main Menu
+  currentScene:
+    m_Handle: 0
+  level: 0
 --- !u!1 &7946705208449726801
 GameObject:
   m_ObjectHideFlags: 0
