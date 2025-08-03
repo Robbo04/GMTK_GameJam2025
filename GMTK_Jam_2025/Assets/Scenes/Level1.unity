@@ -1771,6 +1771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinGate
       objectReference: {fileID: 0}
+    - target: {fileID: 5837467128260648174, guid: 28d40bf9e54b0c74bbe7c5d36a7c6f69, type: 3}
+      propertyPath: CoinCollect
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f02ac24b59ea3e4a9aaf2790e9831a3, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
