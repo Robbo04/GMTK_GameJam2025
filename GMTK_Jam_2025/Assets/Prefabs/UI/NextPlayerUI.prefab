@@ -170,6 +170,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1326418334454176514, guid: d686c45888f816f4fa5e754803188651, type: 3}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7674601429345987937, guid: c15304e353436d0449263057bcc53646, type: 3}
       propertyPath: m_Name
       value: CommonUI - Base (1)
@@ -502,6 +518,22 @@ PrefabInstance:
     - target: {fileID: 3412050734376837337, guid: c15304e353436d0449263057bcc53646, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1326418334454176514, guid: d686c45888f816f4fa5e754803188651, type: 3}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712329059458443874, guid: c15304e353436d0449263057bcc53646, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7674601429345987937, guid: c15304e353436d0449263057bcc53646, type: 3}
       propertyPath: m_Name

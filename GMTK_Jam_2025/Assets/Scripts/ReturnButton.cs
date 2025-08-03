@@ -4,31 +4,22 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class MainMenuScript : MonoBehaviour
+public class ReturnButton : MonoBehaviour
 {
-    //variables
     public string buttonType;
 
+    // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     public void OpenScene()
     {
-        if (buttonType == "Level Selection")
+        if (buttonType == "Main Menu")
         {
             SceneManager.LoadScene(buttonType.ToString());
-        }
-        else if (buttonType == "Credits")
-        {
-            SceneManager.LoadScene(buttonType.ToString());
-        }
-        else if (buttonType == "Exit")
-        {
-            print("Quit NOW");
-            Application.Quit();
         }
     }
 }
