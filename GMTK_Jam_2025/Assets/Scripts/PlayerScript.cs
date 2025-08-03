@@ -20,6 +20,9 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private PhysicsMaterial2D noFrictionMat;
 
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip flickSwitch;
+
     private void Start()
     {
         //replace with different sprites
@@ -33,6 +36,7 @@ public class PlayerScript : MonoBehaviour
             if (!isInSafety)
             {
                 DisablePlayer();
+                SoundFXManager.instance.PlaySoundFXCLip(flickSwitch, rb.transform, 1f);
             }
         }
 
@@ -41,6 +45,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            SoundFXManager.instance.PlaySoundFXCLip(jumpSound, rb.transform, 1f);
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -80,6 +85,7 @@ public class PlayerScript : MonoBehaviour
         rb.velocity = Vector3.zero;
         gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -87,6 +93,7 @@ public class PlayerScript : MonoBehaviour
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("DeathZone"))
         {
             DisablePlayer();
+            SoundFXManager.instance.PlaySoundFXCLip(flickSwitch, rb.transform, 1f);
         }
     }
 }

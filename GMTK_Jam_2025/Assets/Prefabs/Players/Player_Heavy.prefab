@@ -182,6 +182,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   noFrictionMat: {fileID: 6200000, guid: ec2e62aa792a7534b99b6810da1842a9, type: 2}
+  jumpSound: {fileID: 8300000, guid: 0aa2cc4323a8f6d4fac9e7d539218394, type: 3}
+  flickSwitch: {fileID: 8300000, guid: 77629d26ec66bb54180f77e7791c49da, type: 3}
+  completeLevel: {fileID: 8300000, guid: 8f02ac24b59ea3e4a9aaf2790e9831a3, type: 3}
 --- !u!1 &8791219956709371968
 GameObject:
   m_ObjectHideFlags: 0
