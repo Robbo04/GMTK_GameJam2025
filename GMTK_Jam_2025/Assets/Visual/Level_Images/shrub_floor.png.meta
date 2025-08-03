@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shrub_floor_0: 3754102012280220373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

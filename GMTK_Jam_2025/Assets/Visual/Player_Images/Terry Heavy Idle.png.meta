@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terry Heavy Idle_0: -1755612109440136864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
