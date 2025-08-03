@@ -12,11 +12,11 @@ public class SpawnPlayer : MonoBehaviour
     [SerializeField] private GameObject gameObjectToSpawnHeavy;
     [SerializeField] private GameObject cubeCountObject;
     //Variables
-    public int livesLeft = 2;
+    public int livesLeft;
     //Array of Cubes
     GameObject[] players;
-    public int playerType;
-    public List<int> objectType = new List<int>();
+
+    private int objectTypeCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -42,25 +42,32 @@ public class SpawnPlayer : MonoBehaviour
 
     public void CreatePlayer()
     {
-        
-        switch (objectType[0])
+        int upcomingPlayer = cubeCountObject.GetComponent<cubeCount>().GetUpcoming();
+        print(upcomingPlayer);
+        switch (upcomingPlayer)
         {
             case 0:
                 players[livesLeft - 1] = Instantiate(gameObjectToSpawn, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
                 livesLeft--;
+                cubeCountObject.GetComponent<cubeCount>().RemoveNext();
+                objectTypeCount++;
                 break;
             case 1:
                 players[livesLeft - 1] = Instantiate(gameObjectToSpawnBouncy, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
                 livesLeft--;
+                cubeCountObject.GetComponent<cubeCount>().RemoveNext();
+                objectTypeCount++;
                 break;
             case 2:
                 players[livesLeft - 1] = Instantiate(gameObjectToSpawnHeavy, gameObject.transform.localPosition, Quaternion.identity) as GameObject;
                 livesLeft--;
+                cubeCountObject.GetComponent<cubeCount>().RemoveNext();
+                objectTypeCount++;
                 break;
             default:
                 print("Error");
                 break;
         }
-        cubeCountObject.GetComponent<cubeCount>().RemoveNext();
+        
     }
 }
