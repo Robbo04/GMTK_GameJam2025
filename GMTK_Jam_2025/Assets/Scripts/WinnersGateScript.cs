@@ -5,6 +5,8 @@ using UnityEngine;
 public class WinnersGateScript : MonoBehaviour
 {
     [SerializeField] AudioClip CoinCollect;
+    [SerializeField] public GameObject retryButton;
+    [SerializeField] public GameObject winScreen;
 
     public GameObject flag_lowered_image;
     public GameObject flag_raised_image;
@@ -17,12 +19,15 @@ public class WinnersGateScript : MonoBehaviour
 
     private void Start()
     {
+        winScreen.SetActive(false);
         ToggleFlagRaised(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Level Complete");
+        retryButton.SetActive(false);
+        winScreen.SetActive(true);
         //SoundFXManager.instance.PlaySoundFXCLip(CoinCollect, transform, 1f);
         //Destroy(this.gameObject);
         ToggleFlagRaised(true);
