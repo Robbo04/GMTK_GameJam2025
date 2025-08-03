@@ -1394,6 +1394,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 214644428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1048263313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1317967536488837222, guid: 7927a6380526f1142aac7c0b901c8a44, type: 3}
+  m_PrefabInstance: {fileID: 1570319136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1082533575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,6 +2424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426879618764086886, guid: d5ecc43e43dbd6c4d8064e38c525a6a0, type: 3}
+      propertyPath: cubeCountObject
+      value: 
+      objectReference: {fileID: 1048263313}
     - target: {fileID: 6039987375120760034, guid: d5ecc43e43dbd6c4d8064e38c525a6a0, type: 3}
       propertyPath: m_Name
       value: SpawnPoint
@@ -2895,6 +2904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Death (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5500824968117117365, guid: 97dfbe7c4169b1a49ad1b2440edbea39, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ec2e62aa792a7534b99b6810da1842a9, type: 2}
     - target: {fileID: 6451399426609638883, guid: 97dfbe7c4169b1a49ad1b2440edbea39, type: 3}
       propertyPath: m_LocalScale.x
       value: 9
