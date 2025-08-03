@@ -18,7 +18,8 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-    [SerializeField] private PhysicsMaterial2D noFrictionMat;
+    [SerializeField] private PhysicsMaterial2D NoFrictionMat;
+    [SerializeField] private PhysicsMaterial2D FrictionMat;
 
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip flickSwitch;
@@ -38,6 +39,11 @@ public class PlayerScript : MonoBehaviour
     {
         terry_image_activated.GetComponent<Renderer>().enabled = isActivated;
         terry_image_deactivated.GetComponent<Renderer>().enabled = !isActivated;
+
+        if(!isActivated)
+        {
+            gameObject.GetComponent<BoxCollider2D>().sharedMaterial = FrictionMat;
+        }
     }
 
     void Update()
@@ -94,7 +100,7 @@ public class PlayerScript : MonoBehaviour
         FindAnyObjectByType<SpawnPlayer>().Spawn();
         gameObject.layer = 6;
         rb.velocity = Vector3.zero;
-        gameObject.GetComponent<BoxCollider2D>().sharedMaterial = noFrictionMat;
+        gameObject.GetComponent<BoxCollider2D>().sharedMaterial = NoFrictionMat;
         gameObject.GetComponent<PlayerScript>().enabled = false;
         ToggleVisualActivation(false);
 
