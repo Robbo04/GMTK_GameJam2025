@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 1795021345}
-  buttonType: 0
+  buttonType: Play
 --- !u!1001 &1169739198
 PrefabInstance:
   m_ObjectHideFlags: 0

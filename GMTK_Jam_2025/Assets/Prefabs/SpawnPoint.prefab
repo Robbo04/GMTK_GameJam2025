@@ -193,8 +193,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ff2fd6792d0694699a16271fe7fe39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectToSpawn: {fileID: 1846997345827513882, guid: 16660952d7575b64baef66507aaee43b, type: 3}
   spawnProtection: {fileID: 5803699051809090331}
+  gameObjectToSpawn: {fileID: 1846997345827513882, guid: 16660952d7575b64baef66507aaee43b, type: 3}
+  gameObjectToSpawnBouncy: {fileID: 1846997345827513882, guid: ff2fbec23ca92e747ab5f0e03433295c, type: 3}
+  gameObjectToSpawnHeavy: {fileID: 1846997345827513882, guid: 7a685a1778ce4b54a930b36812a638c9, type: 3}
+  cubeCountObject: {fileID: 0}
   livesLeft: 10
 --- !u!212 &3446592667229402472
 SpriteRenderer:

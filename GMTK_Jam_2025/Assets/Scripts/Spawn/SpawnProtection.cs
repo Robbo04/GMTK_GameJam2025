@@ -16,7 +16,7 @@ public class SpawnProtection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player" && other.GetComponent<PlayerScript>().isActiveAndEnabled)
+        if ((other.tag == "Player") && other.GetComponent<PlayerScript>().isActiveAndEnabled)
         {
             IsInside = false;
             other.gameObject.GetComponent<PlayerScript>().isInSafety = false;
