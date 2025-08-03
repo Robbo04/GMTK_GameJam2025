@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      leaf_icon_new_0: 6765921288784960762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
