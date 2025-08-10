@@ -6668,11 +6668,20 @@ PrefabInstance:
       propertyPath: retryButton
       value: 
       objectReference: {fileID: 995720943}
+    - target: {fileID: 5837467128260648174, guid: 28d40bf9e54b0c74bbe7c5d36a7c6f69, type: 3}
+      propertyPath: flag_lowered_image
+      value: 
+      objectReference: {fileID: 2705731985903949438}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28d40bf9e54b0c74bbe7c5d36a7c6f69, type: 3}
+--- !u!1 &2705731985903949438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1125688639973823165, guid: 28d40bf9e54b0c74bbe7c5d36a7c6f69, type: 3}
+  m_PrefabInstance: {fileID: 2705731985903949437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3490962283860271293
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4815476061570213978, guid: 563fbce7f46a8f64db43942a2bc9c147, type: 3}
+    - target: {fileID: 6257434297679173679, guid: 00108d86baa2c944eb6d9fd47872b7dc, type: 3}
+      propertyPath: level
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6664731886916905592, guid: 00108d86baa2c944eb6d9fd47872b7dc, type: 3}
       propertyPath: m_Name
       value: YouWinUI
